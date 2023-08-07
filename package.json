@@ -1,0 +1,16 @@
+{
+  "name": "mac-os-simulator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bootstrap": "npm install bootstrap@v5.3.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.1",
+    "feather-icons": "^4.29.0"
+  }
+}

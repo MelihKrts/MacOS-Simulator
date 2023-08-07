@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>macOS</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+
+<body onload="showingTime()">
+
+
+
+    <header class="w-100 site-head position-relative">
+
+        <nav class="w-100 container-fluid d-flex justify-content-between">
+
+            <!-- Example single danger button -->
+
+            <div class="dropdown d-flex">
+                <li class=" dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="img/apple.png" alt="apple logo" class=" logo-width my-2">
+                </li>
+
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item"><span>About The Mac</span></li>
+                    <div class="line"></div>
+
+                    <li class="dropdown-item"><span>System Preferences</span> </li>
+                    <li class="dropdown-item"><span>App Store</span></li>
+                    <div class="line"></div>
+
+                    <li class="dropdown-item"><span>Recent Item</span></li>
+                    <div class="line"></div>
+
+                    <li class="dropdown-item"><span>Force Quit</span></li>
+                    <div class="line"></div>
+
+                    <li class="dropdown-item"><span>Sleep</span></li>
+                    <li class="dropdown-item"><span>Restart</span></li>
+                    <li class="dropdown-item"><span>Shut Down</span></li>
+                    <div class="line"></div>
+
+                    <li class="dropdown-item"><span>Lock Screen</span></li>
+                    <li class="dropdown-item"><span>Log Out User</span></li>
+                </ul>
+
+                <li class="dropdown menu-list" data-bs-toggle="dropdown" aria-expanded="false"><b>Finder</b></li>
+
+                <ul class="dropdown-menu">
+
+                    <li class="dropdown-item"><span>About Finder</span></li>
+                    <div class="line "></div>
+
+                    <li class="dropdown-item"><span>Preferences</span></li>
+                    <div class="line "></div>
+
+                    <li class="dropdown-item special"><span>Empty Trash</span></li>
+                    <div class="line"></div>
+
+                    <li class="dropdown-item"><span>Hide Finder</span></li>
+                    <li class="dropdown-item"><span>Hide Others</span></li>
+                    <li class="dropdown-item special"><span>Show All</span></li>
+                </ul>
+
+                <li class="dropdown menu-list" data-bs-toggle="dropdown" aria-expanded="false">File</li>
+
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item"><span>New Finder Window</span></li>
+                    <li class="dropdown-item"><span>New Folder</span></li>
+
+                    <li class="dropdown-item special"><span>New Folder with Selection</span></li>
+                    <li class="dropdown-item"><span>New Smart Folder</span></li>
+                    <li class="dropdown-item"><span>New Tab</span></li>
+
+                    <li class="dropdown-item special"><span>Open</span></li>
+                    <li class="dropdown-item special"><span>Open With</span></li>
+                    <li class="dropdown-item special"><span>Print</span></li>
+                    <li class="dropdown-item special"><span>Close Window</span></li>
+                    <div class="line"></div>
+
+                    <li class="dropdown-item"><span>Get Info</span></li>
+
+                    <li class="dropdown-item special"><span>Rename</span></li>
+
+                    <div class="line"></div>
+
+                    <li class="dropdown-item special"><span>Compress</span></li>
+
+                    <div class="line"></div>
+
+                    <li class="dropdown-item special"><span>Duplicate</span></li>
+                    <li class="dropdown-item special"><span>Make Alias</span></li>
+                    <li class="dropdown-item special"><span>Quick Look</span></li>
+                    <li class="dropdown-item special"><span>Show Original</span></li>
+                    <li class="dropdown-item special"><span>Add to Sidebar</span></li>
+
+                    <div class="line"></div>
+
+                    <li class="dropdown-item special"><span>Move to Trash</span></li>
+                    <li class="dropdown-item special"><span>Eject</span></li>
+
+                    <div class="line"></div>
+
+                    <li class="dropdown-item"><span>Find</span></li>
+
+                    <div class="line"></div>
+
+                    <li class="dropdown-item special"><span>Tags</span></li>
+
+                </ul>
+
+                <li class="dropdown menu-list" data-bs-toggle="dropdown" aria-expanded="false">Edit</li>
+
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item special"><span>Undo</span></li>
+                    <li class="dropdown-item special"><span>Redo</span></li>
+                    <div class="line"></div>
+
+                    <li class="dropdown-item special"><span>Cut</span></li>
+                    <li class="dropdown-item special"><span>Copy</span></li>
+                    <li class="dropdown-item special"><span>Paste</span></li>
+                    <li class="dropdown-item special"><span>Select All</span></li>
+                    <div class="line"></div>
+
+                    <li class="dropdown-item"><span>Show Clipboard</span></li>
+                    <div class="line"></div>
+
+                    <li class="dropdown-item"><span>Start Dictation...</span></li>
+                    <li class="dropdown-item"><span>Emoji & Symbols</span></li>
+
+                </ul>
+
+                <li class="dropdown menu-list" data-bs-toggle="dropdown" aria-expanded="false">View</li>
+
+                <ul class="dropdown-menu">
+
+                    <li class="dropdown-item special"><span>As Icons</span></li>
+                    <li class="dropdown-item special"><span>As List</span></li>
+                    <li class="dropdown-item special"><span>As Columns</span></li>
+                    <li class="dropdown-item special"><span>As Gallery</span></li>
+                    <div class="line"></div>
+
+                    <li class="dropdown-item"><span>Use Stacks</span></li>
+                    <li class="dropdown-item"><span>Sort By</span></li>
+                    <li class="dropdown-item special"><span>Clean Up</span></li>
+                    <li class="dropdown-item special"><span>Clean Up By</span></li>
+                    <div class="line"></div>
+
+                    <li class="dropdown-item special"><span>Hide Sidebar</span></li>
+                    <li class="dropdown-item special"><span>Show Preview</span></li>
+                    <div class="line"></div>
+
+                    <li class="dropdown-item special"><span>Hide Toolbar</span></li>
+                    <li class="dropdown-item special"><span>Show All Tabs</span></li>
+                    <li class="dropdown-item special"><span>Show Tab Bar</span></li>
+                    <li class="dropdown-item special"><span>Show Path Bar</span></li>
+                    <li class="dropdown-item special"><span>Show Status Bar</span></li>
+                    <div class="line"></div>
+
+
+                    <li class="dropdown-item special"><span>Customize Toolbar</span></li>
+                    <div class="line"></div>
+
+                    <li class="dropdown-item"><span>Show View Options</span></li>
+                    <li class="dropdown-item special"><span>Show Preview Options</span></li>
+                    <div class="line"></div>
+
+
+                    <li class="dropdown-item special"><span>Enter Full Screen</span></li>
+
+                </ul>
+
+                <li class="dropdown menu-list" data-bs-toggle="dropdown" aria-expanded="false">Go</li>
+
+                <ul class="dropdown-menu">
+
+                    <li class="dropdown-item special"><span>Back</span></li>
+                    <li class="dropdown-item special"><span>Forward</span></li>
+                    <li class="dropdown-item"><span>Enclosing Folder</span></li>
+                    <div class="line"></div>
+
+                    <li class="dropdown-item"><span>Recents</span></li>
+                    <li class="dropdown-item"><span>Documents</span></li>
+                    <li class="dropdown-item"><span>Desktop</span></li>
+                    <li class="dropdown-item"><span>Downloads</span></li>
+                    <li class="dropdown-item"><span>Home</span></li>
+                    <li class="dropdown-item"><span>Computer</span></li>
+                    <li class="dropdown-item"><span>Airdrop</span></li>
+                    <li class="dropdown-item"><span>Network</span></li>
+                    <li class="dropdown-item"><span>iCloud Drive</span></li>
+                    <li class="dropdown-item"><span>Applications</span></li>
+                    <li class="dropdown-item"><span>Utilities</span></li>
+                    <div class="line"></div>
+
+                    <li class="dropdown-item"><span>Go To Folder</span></li>
+                    <li class="dropdown-item"><span>Connect to Server</span></li>
+
+                </ul>
+
+                <li class="dropdown menu-list" data-bs-toggle="dropdown" aria-expanded="false">Window</li>
+
+                <ul class="dropdown-menu">
+
+                    <li class="dropdown-item special"><span>Minimize</span></li>
+                    <li class="dropdown-item special"><span>Zoom</span></li>
+                    <li class="dropdown-item special"><span>Move Window to Left Side of Screen</span></li>
+                    <li class="dropdown-item special"><span>Move Window to Right Side of Screen</span></li>
+                    <li class="dropdown-item"><span>Cycle Through Windows</span></li>
+                    <div class="line"></div>
+
+                    <li class="dropdown-item special"><span>Show Previous Tab</span></li>
+                    <li class="dropdown-item special"><span>Show Next Tab</span></li>
+                    <li class="dropdown-item special"><span>Move Tab to New Window</span></li>
+                    <li class="dropdown-item special"><span>Merge all Windows</span></li>
+                    <div class="line"></div>
+
+                    <li class="dropdown-item"><span>Bring All to Front</span></li>
+                    <li class="dropdown-item"><span>Connect to Server</span></li>
+
+                </ul>
+
+                <li class="dropdown menu-list" data-bs-toggle="dropdown" aria-expanded="false">Help</li>
+
+                <ul class="dropdown-menu">
+
+                    <li class="dropdown-item"><span>Send Finder Feedback</span></li>
+                    <div class="line"></div>
+
+                    <li class="dropdown-item"><span>macOS Help</span></li>
+
+                </ul>
+
+
+            </div>
+
+            <div id="time-screen" class="col-4 col-md-4 col-lg-2 ps-2 d-flex align-items-center d-none d-md-flex"></div>
+
+        </nav>
+    </header>
+
+    <section class="w-100 position-relative">
+
+        <div class="position-absolute hiding-div">
+
+            <div id="cal-box" class="animation">
+
+                <div class="circle-area">
+
+                    <div class="circle close" id="close-cal">
+                        <i class="close-icon" data-feather="x"></i>
+                    </div>
+
+                    <div class="circle yellow"></div>
+                    <div class="circle green"></div>
+
+                </div>
+
+                <div class="area">
+                    <span>0</span>
+                </div>
+
+                <div class="key-area">
+
+                    <div class="key">C</div>
+                    <div class="key">+/-</div>
+                    <div class="key">%</div>
+                    <div class="key">/</div>
+
+                    <div class="key">7</div>
+                    <div class="key">8</div>
+                    <div class="key">9</div>
+                    <div class="key">x</div>
+
+                    <div class="key">4</div>
+                    <div class="key">5</div>
+                    <div class="key">6</div>
+                    <div class="key">-</div>
+
+                    <div class="key">1</div>
+                    <div class="key">2</div>
+                    <div class="key">3</div>
+                    <div class="key">+</div>
+
+                    <div class="key flex-2 radius">0</div>
+                    <div class="key">.</div>
+                    <div class="key right-radius last-key">=</div>
+
+                </div>
+
+            </div>
+
+            <div id="notes-box" class="animation">
+
+                <div class="notes-head-area">
+
+                    <div class="circle close" id="close-notes">
+                        <i class="close-icon" data-feather="x"></i>
+                    </div>
+
+                    <div class="circle yellow"></div>
+                    <div class="circle green"></div>
+
+                </div>
+
+                <div class="notes-content">
+
+                  <div class="notes-left">
+
+                  </div>  
+
+                  <div class="notes-right">
+                    <textarea name="" id="" cols="30" rows="12"></textarea>
+                  </div>
+
+                </div>
+
+            </div>
+
+            <div id="photos-box" class="animation">
+
+                <div class="photos-head-area">
+
+                    <div class="circle close" id="close-photos">
+                        <i class="close-icon" data-feather="x"></i>
+                    </div>
+
+                    <div class="circle yellow"></div>
+                    <div class="circle green"></div>
+
+                    <div class="text">WallPapers</div>
+
+                </div>
+
+                <div class="wallpapers-screen-area">
+                    
+                    <div class="img-screen" id="img-screen">
+                        <img src="img/wallpaper.jpg" alt="" class="img-fluid" id="changeImage">
+                    </div>
+
+                    <div class="img-text" id="default-name">
+                        <span>Big Sur Graphic</span>
+                    </div>
+
+                </div>
+
+                <div class="wallpapers-screen">
+
+                    <div class="fifty" id="ventura">
+                        <img src="img/venture.webp" />
+                        <div class="image-name" id="img-ventura">Ventura</div>
+                    </div>
+
+                    <div class="fifty" id="monterey">
+                        <img src="img/monterey.webp" />
+                        <div class="image-name">Monterey</div>
+                    </div>
+
+                    <div class="fifty" id="big-sur">
+                        <img src="img/wallpaper.jpg" />
+                        <div class="image-name">Big Sur Graphic</div>
+                    </div>
+
+                    <div class="fifty" id="iris">
+                        <img src="img/iridescence.webp" />
+                        <div class="image-name">Iridescence</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="w-100 position-relative">
+        <div class="container flex justify-content-center align-items-center d-flex position-relative">
+
+            <div class="total-area position-fixed">
+
+                <div class="dock d-flex flex-row">
+
+                    <div class="icon" id="finder"><img src="img/favicon.png" alt="Finder"></div>
+                    <div class="icon" id="calculator"><img src="img/calculator.png"
+                            alt="calculator"></div>
+                    <div class="icon" id="notes"><img src="img/notes.png" alt="Notes"></div>
+                    <div class="icon" id="photos"><img src="img/photos.png" alt="Photos"></div>
+                    <div class="icon"><img src="img/preferences.png" alt="Preferences"></div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <script src="node_modules/feather-icons/dist/feather.js"></script>
+    <script>
+        feather.replace()
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="node_modules/@popperjs/core/lib/popper.js" type="module"></script>
+
+</body>
+
+</html>
